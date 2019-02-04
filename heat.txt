@@ -1,0 +1,19 @@
+https://docs.openstack.org/heat/rocky/template_guide/hello_world.html
+
+
+heat_template_version: 2015-04-30
+
+description: Simple template to deploy a single compute instance
+
+resources:
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: my_key
+      image: ubuntu-trusty-x86_64
+      flavor: m1.small
+      
+      
+      
+      
+I would like to expand this project to work with params as well later on

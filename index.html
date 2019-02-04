@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+<!--    Bootstrap link-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+   <div class="container" style="margin-top: 100px;">
+   <form onsubmit="return results();" method="post">
+   
+   <legend class="title">HEAT TEMPLATE GENERATOR</legend>
+  <div class="form-group row">
+    <label for="version" class="col-sm-2 col-form-label"  >heat_template_version:</label>
+    <div class="col-sm-10" >
+    
+    <select class="form-control" id="version" style="width: 200px;">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    
+<!--      <input type="text" class="form-control" id="version" placeholder="Version" style="width: 200px;">-->
+    </div>
+  </div> 
+  
+  <div class="form-group row">
+    <label for="description" class="col-sm-2 col-form-label"  >description:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="description" placeholder="Description" style="width: 200px;">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="resources" class="col-sm-2 col-form-label"  >resources:</label>
+<!--
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="resources" placeholder="Resources" style="width: 200px;">
+    </div>
+-->
+  </div>
+
+  <div class="form-group row">
+    <label for="instance_name:" class="col-sm-2 col-form-label"  >instance_name:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="instance_name" placeholder="Instance_name" style="width: 200px;">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="type" class="col-sm-2 col-form-label"  >type:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="type" placeholder="Type" style="width: 200px;">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="properties" class="col-sm-2 col-form-label"  >properties:</label>
+<!--
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="properties" placeholder="Properties" style="width: 200px;">
+    </div>
+-->
+  </div>
+
+  <div class="form-group row">
+    <label for="key_name" class="col-sm-2 col-form-label"  >key_name:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="key_name" placeholder="Key_name" style="width: 200px;">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="image" class="col-sm-2 col-form-label"  >image:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="image" placeholder="Image" style="width: 200px;">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="flavor" class="col-sm-2 col-form-label"  >flavor:</label>
+    <div class="col-sm-10" >
+      <input type="text" class="form-control" id="flavor" placeholder="Flavor" style="width: 200px;">
+    </div>
+  </div>
+
+
+  <button type="submit" value="submit" class="btn btn-primary">Give me the YAML file!</button>
+   
+
+   
+    </form>
+</div><!--   container end-->
+   
+   
+    <script src="script.js"></script>
+</body>
+</html>
