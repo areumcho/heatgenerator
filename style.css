@@ -8,3 +8,6 @@ label.col-form-label, col-sm-2 col-form-label {
 }
 
 
+button {
+    margin: 20px !important;
+}
